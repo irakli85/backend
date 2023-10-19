@@ -4,6 +4,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const declarationRoutes = require('./routes/declarations')
+const userRoutes = require('./routes/user')
 
 //express app
 const app = express()
@@ -18,6 +19,7 @@ app.use((req, res, next) => {
 
 //routes
 app.use('/api/declarations', declarationRoutes)
+app.use('/api/user', userRoutes)
 
 //connect to db
 
