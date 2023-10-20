@@ -34,7 +34,4 @@ mongoose.connect(process.env.MONGO_URI)
         console.log(error)
     })
 
-// app.get('/', (req, res) => {
-//     res.json({mssg : 'welcome'})
-// })
 
